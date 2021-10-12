@@ -42,3 +42,21 @@ const members = (iLists) => {
   return resultI}
 
 console.log(members(iLists));  
+
+//Using the age information and filter function list all peoples who are old enough o see Matrix (older than 18)
+
+const vipList = [
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+];
+
+
+const limitAge = 18;
+
+const whoCan = (vipList) => {
+    let whoCanSee = vipList.filter(vip => vip.age >= limitAge);
+return whoCanSee }
+console.log(whoCan(vipList));
